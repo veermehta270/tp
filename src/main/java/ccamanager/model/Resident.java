@@ -9,15 +9,18 @@ package ccamanager.model;
 public class Resident {
 
     private String name;
+    private String matricNumber;
     private String ccaName;
     private int points;
 
     /**
      * @param name the resident's full name, e.g. "John Tan"
      */
-    public Resident(String name) {
+    public Resident(String name,String matricNumber,String ccaName) {
         this.name = name;
-        this.ccaName = "";
+        this.matricNumber=matricNumber;
+        this.ccaName = ccaName;
+
         this.points = 0;
     }
 

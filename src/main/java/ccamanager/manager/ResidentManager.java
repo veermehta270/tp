@@ -8,10 +8,15 @@ import java.util.ArrayList;
  * Handles adding, deleting, viewing and giving CCA points to residents.
  */
 public class ResidentManager {
-    private ArrayList<Resident> residents;
+    private static ArrayList<Resident> residents;
 
     public ResidentManager() {
         residents = new ArrayList<>();
+    }
+
+    public static void addResident(String residentName, String matricNumber, String ccaName) {
+        Resident resident  = new Resident(residentName,matricNumber,ccaName);
+        residents.add(resident);
     }
 
 
