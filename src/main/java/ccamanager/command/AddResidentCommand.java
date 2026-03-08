@@ -5,7 +5,7 @@ import ccamanager.manager.ResidentManager;
 import ccamanager.ui.Ui;
 
 /**
-Command to add a resident and his CCA
+ *Command to add a resident and his CCA
  */
 public class AddResidentCommand extends Command{
     private String residentName;
